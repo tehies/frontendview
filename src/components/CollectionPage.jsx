@@ -13,8 +13,8 @@ const CollectionPage = ({ id }) => {
         const fetchCollectionProducts = async () => {
             try {
                 // Fetch collection products
-                // const response = await axios.get(`http://localhost:3000/collectionProduct?collectionId=${collectionId}`);
-                const response = await axios.get(`https://vtex-backend.onrender.com/collectionProduct?collectionId=${collectionId}`);
+                const response = await axios.get(`http://localhost:3000/collectionProduct?collectionId=${collectionId}`);
+                // const response = await axios.get(`https://vtex-backend.onrender.com/collectionProduct?collectionId=${collectionId}`);
                 console.log('API Response:', response);
 
                 if (Array.isArray(response.data.Data)) {
@@ -24,8 +24,8 @@ const CollectionPage = ({ id }) => {
                     const productsWithPrices = await Promise.all(
                         products.map(async (product) => {
                             try {
-                                const priceResponse = await axios.get(`https://vtex-backend.onrender.com/pricing/${product.SkuId}`);
-                                // const priceResponse = await axios.get(`http://localhost:3000/pricing/${product.SkuId}`);
+                                // const priceResponse = await axios.get(`https://vtex-backend.onrender.com/pricing/${product.SkuId}`);
+                                const priceResponse = await axios.get(`http://localhost:3000/pricing/${product.SkuId}`);
                                 console.log(`Price for SkuId ${product.SkuId}:`, priceResponse.data.basePrice);
 
                                 // Add the price to the product object
