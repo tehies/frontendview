@@ -9,7 +9,7 @@ import SearchComponent from './SearchComponent';
 const Banner = ({ imageSrc, title, description, productid }) => { // Ensure the correct prop name
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
-
+ 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
