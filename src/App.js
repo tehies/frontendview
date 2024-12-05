@@ -30,7 +30,7 @@ function App() {
                 <>
                   <Banner
                     imageSrc="https://a.storyblok.com/f/169304/5989x3889/fa5946e402/leem-sale_web-banners-02-1.jpg/m/1440x0/filters:quality(95)"
-                    title={t("bannertext")}
+                    // title={t("bannertext")}
                     description="30% off on seasonal designs"
                     productid="138"
                   />
