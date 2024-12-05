@@ -80,7 +80,7 @@ function App() {
      <Languageselector />
           <Header />
         </header>
-        <main>
+        <main>  
           <Routes>
             {/* Home route with banners and product grids */}
             <Route
