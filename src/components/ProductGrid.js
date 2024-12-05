@@ -13,7 +13,7 @@ const ProductGrid = ({ myId }) => {
     useEffect(() => {
         const fetchCollectionProducts = async () => {
             try {
-                const collectionResponse = await axios.get(`http://localhost:3000/collectionProduct?collectionId=${collectionId}`);
+                const collectionResponse = await axios.get(`https://vtex-backend-791k.onrender.com/collectionProduct?collectionId=${collectionId}`);
                 // const collectionResponse = await axios.get(`https://vtex-backend.onrender.com/collectionProduct?collectionId=${collectionId}`);
                 if (Array.isArray(collectionResponse.data.Data)) {
                     const products = collectionResponse.data.Data;

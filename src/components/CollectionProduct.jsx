@@ -14,7 +14,7 @@ const CollectionProductGrid = ({ id }) => {
         const fetchCollectionProducts = async () => {
             try {
                 // const response = await axios.get(`https://vtex-backend.onrender.com/collectionProduct?collectionId=${collectionId}`);
-                const response = await axios.get(`http://localhost:3000/collectionProduct?collectionId=${collectionId}`);
+                const response = await axios.get(`https://vtex-backend-791k.onrender.com/collectionProduct?collectionId=${collectionId}`);
                 console.log('API Response:', response);
 
                 // Ensure the 'Data' key is valid

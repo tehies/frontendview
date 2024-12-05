@@ -25,7 +25,7 @@ const CollectionPage = ({ id }) => {
                         products.map(async (product) => {
                             try {
                                 // const priceResponse = await axios.get(`https://vtex-backend.onrender.com/pricing/${product.SkuId}`);
-                                const priceResponse = await axios.get(`http://localhost:3000/pricing/${product.SkuId}`);
+                                const priceResponse = await axios.get(`https://vtex-backend-791k.onrender.com/pricing/${product.SkuId}`);
                                 console.log(`Price for SkuId ${product.SkuId}:`, priceResponse.data.basePrice);
 
                                 // Add the price to the product object
