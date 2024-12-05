@@ -13,12 +13,12 @@ import SearchComponent from './components/SearchComponent'
 function App() {
 
 
-  const {t} = useTranslation();
+  // const {t} = useTranslation();
   return (
     <Router>
       <div className="App">
         <header className="App-header">
-     <Languageselector />
+     {/* <Languageselector /> */}
           <Header />
         </header>
         <main>  
