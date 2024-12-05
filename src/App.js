@@ -9,16 +9,16 @@ import Banner from './components/Banner';
 import Header from './components/Header';
 import CollectionPage from './components/CollectionPage';
 import SearchComponent from './components/SearchComponent'
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 function App() {
 
 
-  // const {t} = useTranslation();
+  const {t} = useTranslation();
   return (
     <Router>
       <div className="App">
         <header className="App-header">
-     {/* <Languageselector /> */}
+     <Languageselector />
           <Header />
         </header>
         <main>  
@@ -30,7 +30,7 @@ function App() {
                 <>
                   <Banner
                     imageSrc="https://a.storyblok.com/f/169304/5989x3889/fa5946e402/leem-sale_web-banners-02-1.jpg/m/1440x0/filters:quality(95)"
-                    // title={t("bannertext")}
+                    title={t("bannertext")}
                     description="30% off on seasonal designs"
                     productid="138"
                   />
